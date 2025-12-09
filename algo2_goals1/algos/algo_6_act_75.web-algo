@@ -1,0 +1,1168 @@
+****** OPTIONS ******
+version: 1
+walls:
+  - - 0
+    - 0
+    - 0
+  - - 17
+    - 17
+    - 2
+chirality: true
+visibilityRange: 2
+colors:
+  F: 255
+  L: 16711680
+  O: 16753920
+dimension: 2
+
+****** INITIAL CONFIGURATIONS ******
+.................
+.WWWWWWWWWWWWWWW.
+.W.............W.
+.W.............W.
+.W.............W.
+.W.............W.
+.W.............W.
+.W....F.L......W.
+.W......O......W.
+.W.............W.
+.W.............W.
+.W.............W.
+.W.............W.
+.W.............W.
+.W.............W.
+.WWWWWWWWWWWWWWW.
+.................
+
+****** RULES ******
+@alias X {.,W,O,F,L}
+
+
+# New rule: 177
+ 
+  F  
+ ... 
+..F.. -> left, F
+ ... 
+  .  
+
+# New rule: 255
+ 
+  F  
+ ... 
+..F.. -> right, L
+ .O. 
+  X  
+
+# New rule: 279
+ 
+  L  
+ O.. 
+..F.. -> front, F
+ ... 
+  .  
+
+# New rule: 297
+ 
+  L  
+ ..O 
+..F.. -> front, F
+ ... 
+  .  
+
+# New rule: 306
+ 
+  L  
+ ... 
+O.F.. -> front, F
+ ... 
+  .  
+
+# New rule: 315
+ 
+  L  
+ ... 
+XOF.. -> front, F
+ ... 
+  .  
+
+# New rule: 324
+ 
+  L  
+ ... 
+..FOX -> front, F
+ ... 
+  .  
+
+# New rule: 333
+ 
+  L  
+ ... 
+..F.O -> front, F
+ ... 
+  .  
+
+# New rule: 342
+ 
+  L  
+ ... 
+..F.. -> front, F
+ O.. 
+  .  
+
+# New rule: 351
+ 
+  L  
+ ... 
+..F.. -> front, F
+ .O. 
+  X  
+
+# New rule: 360
+ 
+  L  
+ ... 
+..F.. -> front, F
+ ..O 
+  .  
+
+# New rule: 369
+ 
+  L  
+ ... 
+..F.. -> front, F
+ ... 
+  O  
+
+# New rule: 383
+ 
+  F  
+ O.. 
+..L.. -> back, L
+ ... 
+  .  
+
+# New rule: 401
+ 
+  F  
+ ..O 
+..L.. -> back, L
+ ... 
+  .  
+
+# New rule: 410
+ 
+  F  
+ ... 
+O.L.. -> back, L
+ ... 
+  .  
+
+# New rule: 419
+ 
+  F  
+ ... 
+XOL.. -> back, L
+ ... 
+  .  
+
+# New rule: 428
+ 
+  F  
+ ... 
+..LOX -> back, L
+ ... 
+  .  
+
+# New rule: 437
+ 
+  F  
+ ... 
+..L.O -> back, L
+ ... 
+  .  
+
+# New rule: 446
+ 
+  F  
+ ... 
+..L.. -> back, L
+ O.. 
+  .  
+
+# New rule: 464
+ 
+  F  
+ ... 
+..L.. -> back, L
+ ..O 
+  .  
+
+# New rule: 472
+ 
+  F  
+ ... 
+..L.. -> back, F
+ ... 
+  O  
+
+# New rule: 1031
+ 
+  X  
+ .F. 
+..F.. -> back, L
+ ... 
+  .  
+
+# New rule: 1126
+ 
+  X  
+ OL. 
+..F.. -> front, F
+ ... 
+  .  
+
+# New rule: 1136
+ 
+  X  
+ .LO 
+..F.. -> front, L
+ ... 
+  .  
+
+# New rule: 1144
+ 
+  X  
+ .L. 
+O.F.. -> front, F
+ ... 
+  .  
+
+# New rule: 1153
+ 
+  X  
+ .L. 
+XOF.. -> front, F
+ ... 
+  .  
+
+# New rule: 1162
+ 
+  X  
+ .L. 
+..FOX -> front, F
+ ... 
+  .  
+
+# New rule: 1171
+ 
+  X  
+ .L. 
+..F.O -> front, F
+ ... 
+  .  
+
+# New rule: 1180
+ 
+  X  
+ .L. 
+..F.. -> front, F
+ O.. 
+  .  
+
+# New rule: 1198
+ 
+  X  
+ .L. 
+..F.. -> front, F
+ ..O 
+  .  
+
+# New rule: 1220
+ 
+  X  
+ OF. 
+..L.. -> right, L
+ ... 
+  .  
+
+# New rule: 1231
+ 
+  X  
+ .FO 
+..L.. -> back, L
+ ... 
+  .  
+
+# New rule: 1240
+ 
+  X  
+ .F. 
+O.L.. -> back, L
+ ... 
+  .  
+
+# New rule: 1249
+ 
+  X  
+ .F. 
+XOL.. -> back, L
+ ... 
+  .  
+
+# New rule: 1258
+ 
+  X  
+ .F. 
+..LOX -> back, L
+ ... 
+  .  
+
+# New rule: 1267
+ 
+  X  
+ .F. 
+..L.O -> back, L
+ ... 
+  .  
+
+# New rule: 1276
+ 
+  X  
+ .F. 
+..L.. -> back, L
+ O.. 
+  .  
+
+# New rule: 1283
+ 
+  X  
+ .F. 
+..L.. -> right, L
+ .O. 
+  X  
+
+# New rule: 1294
+ 
+  X  
+ .F. 
+..L.. -> back, L
+ ..O 
+  .  
+
+# New rule: 1302
+ 
+  X  
+ .F. 
+..L.. -> back, F
+ ... 
+  O  
+
+# New rule: 1330
+ 
+  X  
+ OL. 
+..L.. -> back, L
+ ... 
+  .  
+
+# New rule: 1361
+ 
+  X  
+ .L. 
+..LOX -> front, F
+ ... 
+  .  
+
+# Existing rule: 0
+ 
+  L  
+ ... 
+..F.. -> front, F
+ ... 
+  .  
+
+# Existing rule: 1
+ 
+  L  
+ ... 
+..F.. -> front, F
+ WWW 
+  X  
+
+# Existing rule: 2
+ 
+  L  
+ ... 
+..F.. -> front, F
+ ... 
+  W  
+
+# Existing rule: 3
+ 
+  L  
+ ... 
+W.F.. -> front, F
+ ... 
+  .  
+
+# Existing rule: 4
+ 
+  L  
+ ... 
+W.F.. -> front, F
+ WWW 
+  X  
+
+# Existing rule: 5
+ 
+  L  
+ ... 
+W.F.. -> front, F
+ ... 
+  W  
+
+# Existing rule: 6
+ 
+  L  
+ W.. 
+XWF.. -> front, F
+ W.. 
+  .  
+
+# Existing rule: 7
+ 
+  L  
+ W.. 
+XWF.. -> front, F
+ WWW 
+  X  
+
+# Existing rule: 8
+ 
+  L  
+ W.. 
+XWF.. -> front, F
+ W.. 
+  W  
+
+# Existing rule: 9
+ 
+  L  
+ ..W 
+..FWX -> front, F
+ ..W 
+  .  
+
+# Existing rule: 10
+ 
+  L  
+ ..W 
+..FWX -> front, F
+ WWW 
+  X  
+
+# Existing rule: 11
+ 
+  L  
+ ..W 
+..FWX -> front, F
+ ..W 
+  W  
+
+# Existing rule: 12
+ 
+  L  
+ ... 
+..F.W -> front, F
+ ... 
+  .  
+
+# Existing rule: 13
+ 
+  L  
+ ... 
+..F.W -> front, F
+ WWW 
+  X  
+
+# Existing rule: 14
+ 
+  L  
+ ... 
+..F.W -> front, F
+ ... 
+  W  
+
+# Existing rule: 15
+ 
+  X  
+ .L. 
+..F.. -> front, F
+ ... 
+  .  
+
+# Existing rule: 17
+ 
+  X  
+ .L. 
+..F.. -> front, F
+ WWW 
+  X  
+
+# Existing rule: 18
+ 
+  X  
+ .L. 
+..F.. -> front, F
+ ... 
+  W  
+
+# Existing rule: 19
+ 
+  X  
+ .L. 
+W.F.. -> front, F
+ ... 
+  .  
+
+# Existing rule: 21
+ 
+  X  
+ .L. 
+W.F.. -> front, F
+ WWW 
+  X  
+
+# Existing rule: 22
+ 
+  X  
+ .L. 
+W.F.. -> front, F
+ ... 
+  W  
+
+# Existing rule: 23
+ 
+  X  
+ WL. 
+XWF.. -> front, F
+ W.. 
+  .  
+
+# Existing rule: 25
+ 
+  X  
+ WL. 
+XWF.. -> front, F
+ WWW 
+  X  
+
+# Existing rule: 26
+ 
+  X  
+ WL. 
+XWF.. -> front, F
+ W.. 
+  W  
+
+# Existing rule: 27
+ 
+  X  
+ .L. 
+..F.W -> front, F
+ ... 
+  .  
+
+# Existing rule: 29
+ 
+  X  
+ .L. 
+..F.W -> front, F
+ WWW 
+  X  
+
+# Existing rule: 30
+ 
+  X  
+ .L. 
+..F.W -> front, F
+ ... 
+  W  
+
+# Existing rule: 31
+ 
+  W  
+ ..L 
+..F.. -> front, F
+ ... 
+  .  
+
+# Existing rule: 32
+ 
+  W  
+ ..L 
+W.F.. -> front, F
+ ... 
+  .  
+
+# Existing rule: 33
+ 
+  W  
+ ..L 
+..F.W -> front, F
+ ... 
+  .  
+
+# Existing rule: 34
+ 
+  .  
+ ... 
+..L.. -> front, L
+ ... 
+  F  
+
+# Existing rule: 35
+ 
+  W  
+ ... 
+..L.. -> front, L
+ ... 
+  F  
+
+# Existing rule: 36
+ 
+  .  
+ ... 
+W.L.. -> front, L
+ ... 
+  F  
+
+# Existing rule: 37
+ 
+  W  
+ ... 
+W.L.. -> front, L
+ ... 
+  F  
+
+# Existing rule: 38
+ 
+  .  
+ ... 
+..L.W -> front, L
+ ... 
+  F  
+
+# Existing rule: 39
+ 
+  W  
+ ... 
+..L.W -> front, L
+ ... 
+  F  
+
+# Existing rule: 40
+ 
+  .  
+ ... 
+..L.. -> front, L
+ .F. 
+  X  
+
+# Existing rule: 41
+ 
+  W  
+ ... 
+..L.. -> front, L
+ .F. 
+  X  
+
+# Existing rule: 43
+ 
+  .  
+ ... 
+W.L.. -> front, L
+ .F. 
+  X  
+
+# Existing rule: 44
+ 
+  W  
+ ... 
+W.L.. -> front, L
+ .F. 
+  X  
+
+# Existing rule: 46
+ 
+  .  
+ ... 
+..L.W -> front, L
+ .F. 
+  X  
+
+# Existing rule: 47
+ 
+  W  
+ ... 
+..L.W -> front, L
+ .F. 
+  X  
+
+# Existing rule: 49
+ 
+  X  
+ WWW 
+..L.. -> right, L
+ ... 
+  F  
+
+# Existing rule: 50
+ 
+  X  
+ WWW 
+W.L.. -> right, L
+ ... 
+  F  
+
+# Existing rule: 51
+ 
+  X  
+ WWW 
+..L.W -> right, L
+ ... 
+  F  
+
+# Existing rule: 52
+ 
+  .  
+ W.. 
+XWL.. -> right, L
+ W.F 
+  .  
+
+# Existing rule: 53
+ 
+  W  
+ W.. 
+XWL.. -> right, L
+ W.F 
+  .  
+
+# Existing rule: 54
+ 
+  X  
+ WWW 
+XWL.. -> right, L
+ W.F 
+  .  
+
+# Existing rule: 55
+ 
+  .  
+ W.L 
+XWF.. -> front, F
+ W.. 
+  .  
+
+# Existing rule: 56
+ 
+  W  
+ W.L 
+XWF.. -> front, F
+ W.. 
+  .  
+
+# Existing rule: 57
+ 
+  .  
+ W.L 
+XWF.. -> front, F
+ W.. 
+  W  
+
+# Existing rule: 58
+ 
+  X  
+ WWW 
+..L.. -> left, L
+ .F. 
+  X  
+
+# Existing rule: 59
+ 
+  X  
+ WWW 
+W.L.. -> left, L
+ .F. 
+  X  
+
+# Existing rule: 60
+ 
+  X  
+ WWW 
+..L.W -> left, L
+ .F. 
+  X  
+
+# Existing rule: 61
+ 
+  .  
+ ..W 
+..LWX -> left, L
+ .FW 
+  X  
+
+# Existing rule: 62
+ 
+  W  
+ ..W 
+..LWX -> left, L
+ .FW 
+  X  
+
+# Existing rule: 63
+ 
+  X  
+ WWW 
+..LWX -> left, L
+ .FW 
+  X  
+
+# Existing rule: 65
+ 
+  .  
+ ..W 
+W.LWX -> left, L
+ .FW 
+  X  
+
+# Existing rule: 66
+ 
+  W  
+ ..W 
+W.LWX -> left, L
+ .FW 
+  X  
+
+# Existing rule: 67
+ 
+  X  
+ WWW 
+W.LWX -> left, L
+ .FW 
+  X  
+
+# Existing rule: 69
+ 
+  .  
+ ... 
+..L.W -> left, L
+ ..F 
+  .  
+
+# Existing rule: 70
+ 
+  W  
+ ... 
+..L.W -> left, L
+ ..F 
+  .  
+
+# Existing rule: 71
+ 
+  X  
+ WWW 
+..L.W -> left, L
+ ..F 
+  .  
+
+# Existing rule: 72
+ 
+  .  
+ ... 
+..L.W -> left, L
+ ..F 
+  W  
+
+# Existing rule: 73
+ 
+  .  
+ ... 
+W.L.W -> left, L
+ ..F 
+  .  
+
+# Existing rule: 74
+ 
+  W  
+ ... 
+W.L.W -> left, L
+ ..F 
+  .  
+
+# Existing rule: 75
+ 
+  X  
+ WWW 
+W.L.W -> left, L
+ ..F 
+  .  
+
+# Existing rule: 76
+ 
+  .  
+ ... 
+W.L.W -> left, L
+ ..F 
+  W  
+
+# Existing rule: 77
+ 
+  .  
+ L.W 
+..FWX -> front, F
+ ..W 
+  .  
+
+# Existing rule: 78
+ 
+  W  
+ L.W 
+..FWX -> front, F
+ ..W 
+  .  
+
+# Existing rule: 79
+ 
+  .  
+ L.W 
+..FWX -> front, F
+ WWW 
+  X  
+
+# Existing rule: 80
+ 
+  .  
+ L.W 
+..FWX -> front, F
+ ..W 
+  W  
+
+# Existing rule: 81
+ 
+  .  
+ L.W 
+W.FWX -> front, F
+ ..W 
+  .  
+
+# Existing rule: 82
+ 
+  W  
+ L.W 
+W.FWX -> front, F
+ ..W 
+  .  
+
+# Existing rule: 83
+ 
+  .  
+ L.W 
+W.FWX -> front, F
+ WWW 
+  X  
+
+# Existing rule: 84
+ 
+  .  
+ L.W 
+W.FWX -> front, F
+ ..W 
+  W  
+
+# Existing rule: 85
+ 
+  .  
+ W.. 
+XWL.. -> front, L
+ WF. 
+  X  
+
+# Existing rule: 87
+ 
+  .  
+ W.. 
+XWL.W -> front, L
+ WF. 
+  X  
+
+# Existing rule: 89
+ 
+  .  
+ ..W 
+..LWX -> front, L
+ ..W 
+  F  
+
+# Existing rule: 90
+ 
+  .  
+ ..W 
+W.LWX -> front, L
+ ..W 
+  F  
+
+# Existing rule: 91
+ 
+  W  
+ ..W 
+..LWX -> front, F
+ ..W 
+  F  
+
+# Existing rule: 92
+ 
+  W  
+ ..W 
+W.LWX -> front, F
+ ..W 
+  F  
+
+# Existing rule: 93
+ 
+  F  
+ ..W 
+..FWX -> left, L
+ ..W 
+  .  
+
+# Existing rule: 94
+ 
+  F  
+ ..W 
+..FWX -> left, L
+ ..W 
+  W  
+
+# Existing rule: 95
+ 
+  F  
+ ..W 
+W.FWX -> left, L
+ ..W 
+  .  
+
+# Existing rule: 96
+ 
+  F  
+ ..W 
+W.FWX -> left, L
+ ..W 
+  W  
+
+# Existing rule: 97
+ 
+  X  
+ WWW 
+..FWX -> left, F
+ ..W 
+  F  
+
+# Existing rule: 98
+ 
+  X  
+ WWW 
+W.FWX -> left, F
+ ..W 
+  F  
+
+# Existing rule: 99
+ 
+  W  
+ W.. 
+XWL.. -> front, F
+ WF. 
+  X  
+
+# Existing rule: 101
+ 
+  W  
+ W.. 
+XWL.W -> front, F
+ WF. 
+  X  
+
+# Existing rule: 103
+ 
+  X  
+ WWW 
+XWF.. -> right, F
+ WF. 
+  X  
+
+# Existing rule: 104
+ 
+  X  
+ WWW 
+XWF.W -> right, F
+ WF. 
+  X  
+
+# Existing rule: 105
+ 
+  X  
+ WF. 
+XWF.. -> right, L
+ W.. 
+  .  
+
+# Existing rule: 106
+ 
+  X  
+ WF. 
+XWF.. -> right, L
+ W.. 
+  W  
+
+# Existing rule: 107
+ 
+  X  
+ WF. 
+XWF.W -> right, L
+ W.. 
+  .  
+
+# Existing rule: 108
+ 
+  X  
+ WF. 
+XWF.W -> right, L
+ W.. 
+  W  
+
+# Existing rule: 109
+ 
+  X  
+ WWW 
+XWL.. -> right, L
+ WF. 
+  X  
+
+# Existing rule: 111
+ 
+  X  
+ WWW 
+XWL.W -> right, L
+ WF. 
+  X  
+
+# Existing rule: 116
+ 
+  X  
+ WWW 
+XWL.W -> back, L
+ W.F 
+  W  
+

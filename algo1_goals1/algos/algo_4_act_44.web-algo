@@ -1,0 +1,329 @@
+****** OPTIONS ******
+version: 1
+walls:
+  - - 0
+    - 0
+    - 0
+  - - 11
+    - 11
+    - 2
+chirality: true
+visibilityRange: 1
+colors:
+  F: 255
+  L: 16711680
+  R: 32768
+  O: 16753920
+dimension: 2
+
+****** INITIAL CONFIGURATIONS ******
+...........
+.WWWWWWWWW.
+.W.......W.
+.W.......W.
+.W.F.L...W.
+.W...O...W.
+.W.......W.
+.W.......W.
+.W.......W.
+.WWWWWWWWW.
+...........
+
+****** RULES ******
+@alias X {.,W,O,F,L,R}
+
+
+# New rule: 81
+ 
+ F 
+.F. -> left, R
+ . 
+
+# New rule: 88
+ 
+ F 
+OF. -> right, L
+ . 
+
+# New rule: 100
+ 
+ F 
+.FO -> front, R
+ . 
+
+# New rule: 126
+ 
+ L 
+OF. -> front, F
+ . 
+
+# New rule: 140
+ 
+ L 
+.FO -> front, F
+ . 
+
+# New rule: 154
+ 
+ L 
+.F. -> front, F
+ O 
+
+# New rule: 168
+ 
+ R 
+OF. -> front, F
+ . 
+
+# New rule: 182
+ 
+ R 
+.FO -> front, F
+ . 
+
+# New rule: 196
+ 
+ R 
+.F. -> front, F
+ O 
+
+# New rule: 217
+ 
+ F 
+OL. -> back, L
+ . 
+
+# New rule: 231
+ 
+ F 
+.LO -> back, L
+ . 
+
+# New rule: 241
+ 
+ F 
+.L. -> right, F
+ O 
+
+# New rule: 259
+ 
+ L 
+.L. -> back, L
+ . 
+
+# New rule: 280
+ 
+ L 
+.LO -> front, F
+ . 
+
+# New rule: 312
+ 
+ R 
+.L. -> right, L
+ . 
+
+# New rule: 372
+ 
+ F 
+OR. -> back, R
+ . 
+
+# New rule: 386
+ 
+ F 
+.RO -> back, R
+ . 
+
+# New rule: 401
+ 
+ F 
+.R. -> left, F
+ O 
+
+# New rule: 406
+ 
+ L 
+.R. -> front, F
+ . 
+
+# New rule: 463
+ 
+ R 
+.R. -> front, L
+ . 
+
+# New rule: 483
+ 
+ R 
+OR. -> back, L
+ . 
+
+# Existing rule: 0
+ 
+ . 
+.FL -> right, F
+ . 
+
+# Existing rule: 1
+ 
+ W 
+.FL -> right, F
+ . 
+
+# Existing rule: 2
+ 
+ . 
+WFL -> right, F
+ . 
+
+# Existing rule: 3
+ 
+ W 
+WFL -> right, F
+ . 
+
+# Existing rule: 4
+ 
+ . 
+.FL -> right, F
+ W 
+
+# Existing rule: 5
+ 
+ W 
+.FL -> right, F
+ W 
+
+# Existing rule: 6
+ 
+ . 
+WFL -> right, F
+ W 
+
+# Existing rule: 7
+ 
+ W 
+WFL -> right, F
+ W 
+
+# Existing rule: 8
+ 
+ . 
+.FR -> right, F
+ . 
+
+# Existing rule: 9
+ 
+ W 
+.FR -> right, F
+ . 
+
+# Existing rule: 10
+ 
+ . 
+WFR -> right, F
+ . 
+
+# Existing rule: 11
+ 
+ W 
+WFR -> right, F
+ . 
+
+# Existing rule: 12
+ 
+ . 
+.FR -> right, F
+ W 
+
+# Existing rule: 13
+ 
+ W 
+.FR -> right, F
+ W 
+
+# Existing rule: 14
+ 
+ . 
+WFR -> right, F
+ W 
+
+# Existing rule: 15
+ 
+ W 
+WFR -> right, F
+ W 
+
+# Existing rule: 16
+ 
+ . 
+FL. -> right, L
+ . 
+
+# Existing rule: 17
+ 
+ W 
+FL. -> right, L
+ . 
+
+# Existing rule: 18
+ 
+ . 
+FR. -> right, R
+ . 
+
+# Existing rule: 19
+ 
+ . 
+FR. -> right, R
+ W 
+
+# Existing rule: 20
+ 
+ . 
+WRF -> front, R
+ . 
+
+# Existing rule: 21
+ 
+ . 
+WR. -> right, L
+ F 
+
+# Existing rule: 22
+ 
+ W 
+WR. -> right, L
+ F 
+
+# Existing rule: 23
+ 
+ . 
+WLF -> back, L
+ . 
+
+# Existing rule: 24
+ 
+ F 
+WL. -> right, R
+ . 
+
+# Existing rule: 25
+ 
+ F 
+WL. -> right, R
+ W 
+
+# Existing rule: 26
+ 
+ W 
+FLW -> back, R
+ . 
+
+# Existing rule: 27
+ 
+ . 
+FRW -> front, L
+ W 
+
